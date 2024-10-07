@@ -21,5 +21,7 @@ f = int(input('Введите число f:'))
 g = int(input('Введите число g:'))
 while f>g:
     for i in range(f, g-1, -1):
-        print(i)
+        if i%2 !=0:
+            print(i)
     break
+
