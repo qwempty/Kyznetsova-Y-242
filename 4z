@@ -1,0 +1,25 @@
+a = int(input('Введите число a:'))
+b = int(input('Введите число b:'))
+while a<=b:
+    for i in range(a, b+1):
+        print(i)
+    break
+
+
+s = int(input('Введите число s:'))
+d = int(input('Введите число d:'))
+while s<d:
+    for i in range(s, d+1):
+        print(i)
+else:
+    while a>b:
+        for i in range(s, b-1, -1):
+            print(i)
+        break
+
+f = int(input('Введите число f:'))
+g = int(input('Введите число g:'))
+while f>g:
+    for i in range(f, g-1, -1):
+        print(i)
+    break
