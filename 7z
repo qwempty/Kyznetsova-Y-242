@@ -1,0 +1,9 @@
+from random import randint as g
+from functools import reduce
+
+l = [g(-10, 10) for i in range(g(10, 20))]
+s = sum(l[::2])
+p = reduce(type(l[0]).__mul__, l[1::2])
+l[l.index(min(l))], l[l.index(max(l))] = max(l), min(l)
+
+print(f'{l}\nСумма чётных чисел: {s}\nПроизведение нечётных чисел: {p}')
