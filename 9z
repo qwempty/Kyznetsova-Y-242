@@ -1,0 +1,13 @@
+n = int( input( 'Введите размер матрицы ' ) )
+p = (n*n - n)//2 + n
+print( f'Введите {p} элементов матрицы: ' )
+A = []
+for i in range(n):
+    A.append( [0]*n )
+    for j in range(i,n):
+        A[i][j] = int(input( '' ) )
+for i in range(n):
+    for j in range(i,n):
+        A[j][i] = A[i][j]
+for row in A:
+    print( row, sep='\t' )
