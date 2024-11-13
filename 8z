@@ -1,8 +1,8 @@
 import math
-x = float(input('x : '))
-y = float(input('y : '))
-z = float(input('z : '))
-t = float(input('t : '))
+x = float(input('x:'))
+y = float(input('y:'))
+z = float(input('z:'))
+t = float(input('t:'))
 d = math.sqrt(x * x + y * y)
 def Sq1(x, y):
     return x * y * 0.5
