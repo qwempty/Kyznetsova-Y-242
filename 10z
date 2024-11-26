@@ -1,0 +1,5 @@
+with open('kyznetsovamilanavladimirovna_u242_vivod.txt', 'r') as file:
+    file_content = file.read()
+    print(file_content)
+    with open('kyznetsovamilanavladimirovna_u242_vvod.txt', 'w') as output_file:
+         output_file.write(file_content)
