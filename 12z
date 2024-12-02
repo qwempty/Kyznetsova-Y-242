@@ -1,0 +1,25 @@
+
+#7
+a = int(input())
+b = int(input())
+
+if a < b:
+    for i in range(a, b + 1):
+        print(i)
+else:
+    for i in range(a, b - 1, -1):
+        print(i)
+
+
+#4
+def uyu(n):
+    d = 2
+    while d * d <= n and n % d != 0:
+        d += 1
+    return d * d > n
+
+n = int(input())
+if uyu(n):
+    print('YES')
+else:
+    print('NO')
